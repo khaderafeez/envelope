@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear Aadrika </strong>
+                        
+                        <p>
+                            Hi Sorry I got caught up earlier—my bad! 🙈 I hope your day is as amazing as you are 🌟. 
+                            Honestly, talking to you feels like the best part of my day. 
+                            🌸 You’re like a little ray of sunshine, and I’m so glad I get to know you. 
+                            🌞 Thanks for being so sweet; it’s impossible not to smile when I hear from you.
+                            😊 I really enjoy texting you, so anytime, anywhere, 
+                             let’s keep the chats going. 💬✨
+                        </p>
+                    </div>
+                </div>
+               
+            </div>
+            <h2>This message is for the sweetest person, from Afeez. 💌😊</h2>
+            <div class="heart"></div>
+            
+        </div>
+       
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+    
+</body>
+
+</html>
